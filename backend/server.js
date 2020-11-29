@@ -9,7 +9,7 @@ const ApiRouter = require('./routes/api')
 const AccountRouter = require('./routes/account')
 
 const app = express()
-const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/hw6'
+const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/final'
 
 mongoose.connect(MONGO_URI, {
   useNewUrlParser: true,
