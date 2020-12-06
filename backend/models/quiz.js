@@ -1,9 +1,5 @@
 /* eslint-disable linebreak-style */
-const { Schema, model } = require("mongoose");
-// const Question = require('./question')
-// var QuestionSchema = require('./question').QuestionSchema;
-
-// const question = {question, answer}
+const { Schema, model } = require('mongoose')
 
 const quizSchema = new Schema({
   //   name: String,
@@ -13,9 +9,6 @@ const quizSchema = new Schema({
   choices: { type: [[String]] },
   answers: { type: [String] },
   scores: { type: [Number] },
+})
 
-  //   created_at: Date,
-  //   updated_at: Date,
-});
-
-module.exports = model("Quiz", quizSchema);
+module.exports = model('Quiz', quizSchema)
